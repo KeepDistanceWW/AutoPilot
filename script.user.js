@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoPilot с фильтром по габаритам и обновлением страниц
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Импорт карточек с фильтрацией габаритов и обновлением страницы каждые 3 блока импорта.
 // @author       KeepDistance
 // @match        https://sellerpilot.ru/catalog-v2*
@@ -9,7 +9,7 @@
 // @downloadURL  https://github.com/KeepDistanceWW/AutoPilot/raw/refs/heads/main/script.user.js
 // @grant        none
 // ==/UserScript==
-
+///VLAD LOX
 (function () {
   'use strict';
 
