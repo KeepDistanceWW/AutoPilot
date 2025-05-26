@@ -1,2 +1,2 @@
 # AutoPilot
-AutoPilot's script that makes life better
+AutoPilot is a script that makes life better
