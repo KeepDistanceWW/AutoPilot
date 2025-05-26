@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoPilot с фильтром по габаритам и обновлением страниц
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  Импорт карточек с фильтрацией габаритов и обновлением страницы каждые 3 блока импорта.
 // @author       KeepDistance
 // @match        https://sellerpilot.ru/catalog-v2*
@@ -19,10 +19,10 @@
   const MIN_DELAY = 400;
   const MAX_DELAY = 800;
 
-  const MAX_LENGTH = 100;
+  const MAX_LENGTH = 50;
   const MAX_WIDTH = 50;
-  const MAX_HEIGHT = 40;
-  const MAX_WEIGHT = 9.4;
+  const MAX_HEIGHT = 50;
+  const MAX_WEIGHT = 10;
 
   const delay = (ms) => new Promise(res => setTimeout(res, ms));
   const humanDelay = () => delay(MIN_DELAY + Math.random() * (MAX_DELAY - MIN_DELAY));
@@ -101,7 +101,7 @@
         }
 
         // Рандомная задержка перед кликом
-        const importDelay = 1000 + Math.random() * 2000;
+        const importDelay = 1000 + Math.random() * 200;
         console.log(`⏳ Задержка перед импортом: ${Math.round(importDelay)} мс`);
         await delay(importDelay);
 
