@@ -6,7 +6,7 @@
 // @author       KeepDistance
 // @match        https://sellerpilot.ru/catalog-v2*
 // @updateURL    https://github.com/KeepDistanceWW/AutoPilot/raw/refs/heads/main/script.user.js
-//downloadURL    https://github.com/KeepDistanceWW/AutoPilot/raw/refs/heads/main/script.user.js
+// @downloadURL  https://github.com/KeepDistanceWW/AutoPilot/raw/refs/heads/main/script.user.js
 // @grant        none
 // ==/UserScript==
 
