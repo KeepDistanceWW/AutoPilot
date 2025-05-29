@@ -14,7 +14,7 @@
   'use strict';
 
   const BLOCK_REPEAT_COUNT = 200;
-  const IMPORTS_PER_BLOCK = 5;
+  const IMPORTS_PER_BLOCK = 15;
   const LONG_PAUSE_MS = 2 * 60 * 1000;
   const MIN_DELAY = 400;
   const MAX_DELAY = 800;
@@ -99,15 +99,6 @@
     input.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
   }
 
-  function setDuplicates() {
-    const label = Array.from(document.querySelectorAll('label')).find(l => l.textContent.includes('Дубликатов'));
-    if (!label) return;
-    const inputId = label.getAttribute('for');
-    const input = inputId ? document.getElementById(inputId) : null;
-    if (!input) return;
-    input.value = '3';
-    input.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
-  }
 
   async function sendTelegramMessage(text) {
     const token = localStorage.getItem('tg_bot_token');
@@ -204,7 +195,7 @@
         }
 
         clearBrandField();
-        setDuplicates();
+      
 
         const confirmBtn = Array.from(document.querySelectorAll('vaadin-button')).find(btn => btn.textContent.trim() === 'Импортировать');
         if (confirmBtn) {
