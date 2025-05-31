@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoPilot
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  Импорт карточек с лимитом, логированием, уведомлениями в Telegram, учётом успешных импортов и сбросом в 00:00 по МСК
 // @author       KeepDistance
 // @match        https://sellerpilot.ru/catalog-v2*
